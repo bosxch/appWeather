@@ -1,4 +1,3 @@
-import { style } from '@mui/system';
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
@@ -9,7 +8,7 @@ import style from './Header.module.css'
 export const Header = () =>  (
  <div className={style.Container}> 
     <div className={style.DivApp}>
-      <Link href='/'>
+      <Link legacyBehavior href='/'>
         <a style={{display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px'}}>
         <span className={style.Span} style={{'margin-top':'0.5rem', 'cursor':'default'}}>App Weather</span>
         </a>
@@ -17,12 +16,12 @@ export const Header = () =>  (
     </div>
     <div className={style.DivRefs}>
       <li>
-        <Link href='#locations'>
+        <Link legacyBehavior href='#locations'>
           <a className={style.NavLink}>My Locations</a>
         </Link>
       </li>
       <li>
-        <Link href='#tech'>
+        <Link legacyBehavior href='#add'>
           <a className={style.NavLink}>Add Location</a>
         </Link>
       </li>

@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
-import { Container } from './LayoutStyles'
+import {Footer} from '../components/Footer/Footer'
+import {Header} from '../components/Header/Header'
+import style from './LayoutStyles.module.css'
 
 export const Layout = ({children}) => {
   return (
-    <Container>
-     <Header/>
-     <main>{children}</main> 
+    <div className={style.Container}>
+     <Header/>  
+   
      <Footer/>
-    </Container>
+     </div>
   )
 }

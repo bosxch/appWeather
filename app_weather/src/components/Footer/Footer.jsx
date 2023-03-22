@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import {BsBriefcase} from 'react-icons/bs'
+import style from './Footer.module.css'
 
 export const Footer = () => {
     <section className={style.FooterWrapper}>
