@@ -4,22 +4,22 @@ import { FcDocument } from "react-icons/fc";
 import {BsBriefcase} from 'react-icons/bs'
 
 export const Footer = () => {
-    <div className={style.FooterWrapper}>
+    <section className={style.FooterWrapper}>
         <div className={style.SocialIconsContainer}>
             <div className={style.SocialContainer}>
-                <div className={style.SocialIcons}>
+                <a className={style.SocialIcons}>
                     <FcDocument size='3rem'/>
-                </div>
-                <div className={style.SocialIcons}>
+                </a>
+                <a className={style.SocialIcons}>
                     <AiFillGithub size='3rem'/>
-                </div>
-                <div className={style.SocialIcons}>
+                </a>
+                <a className={style.SocialIcons}>
                     <AiFillLinkedin size='3rem'/>
-                </div>
-                <div className={style.SocialIcons}>
+                </a>
+                <a className={style.SocialIcons}>
                     <BsBriefcase size='3rem'/>
-                </div>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 }
